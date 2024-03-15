@@ -56,7 +56,7 @@ const handleOnChange = (e) => {
 
     <div className='container my-3' style={{color:props.mode === 'light'?'black':'white'}}>
       <h4 className='mb-2'>Your Text Summary</h4>
-      <p>This Sentence Contain {text.split(' ').length-1} words and {text.split('').filter(char => char !== ' ').length} letters.</p>
+      <p>This Sentence Contain {text.split(' ').filter(elm => elm.length !== 0).length} words and {text.split('').filter(char => char !== ' ').length} letters.</p>
     </div>
     </>
     );
