@@ -47,11 +47,11 @@ const handleOnChange = (e) => {
            style={{backgroundColor:props.mode === 'light'?'white':'#333' , color:props.mode === 'light'?'black':'white'}} 
           onChange={handleOnChange} id="myBox" rows={8} defaultValue={""} />
         </div>
-        <button className='btn btn-primary mx-2' onClick={handleUpClick}>Convert to UpperCase</button>
-        <button className='btn btn-primary mx-2' onClick={handleLowClick}>Convert to lowerCase</button>
-        <button className='btn btn-primary mx-2' onClick={handleRmvClick}>clear Text</button>
-        <button className='btn btn-primary mx-2' onClick={handleCopyClick}>Copy Text</button>
-        <button className='btn btn-primary mx-2' onClick={handleSpaceRmv}>Remove extra space</button>
+        <button className='btn btn-primary mx-2 my-2' onClick={handleUpClick}>Convert to UpperCase</button>
+        <button className='btn btn-primary mx-2 my-2' onClick={handleLowClick}>Convert to lowerCase</button>
+        <button className='btn btn-primary mx-2 my-2' onClick={handleRmvClick}>clear Text</button>
+        <button className='btn btn-primary mx-2 my-2' onClick={handleCopyClick}>Copy Text</button>
+        <button className='btn btn-primary mx-2 my-2' onClick={handleSpaceRmv}>Remove extra space</button>
     </div>
 
     <div className='container my-3' style={{color:props.mode === 'light'?'black':'white'}}>
