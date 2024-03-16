@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Alerts from './components/Alerts';
@@ -9,8 +9,7 @@ import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
@@ -48,15 +47,16 @@ function App() {
   return (
     <>
   <Router>
-    <Navbar a='My-Application' mode={mode} toggleMode={toggleMode}/>
+  
+    <Navbar a='TextUtills' mode={mode} toggleMode={toggleMode}/>
     < div className='container mt-4 col-8'>
     <Alerts alert={alert} />
     </div>
+    
     <div className='container mt-5'>
     <Routes>
-          <Route path="/about" element={<About/>}/>
-          
           <Route path="/home" element={<TextForm showAlert={showAlert} mode={mode} toggleMode={toggleMode} />}/>
+          <Route path="/about" element={<About/>}/>
     </Routes>
     </div>
     </Router>
